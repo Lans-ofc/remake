@@ -72,16 +72,16 @@ const listMessage = {
   let sn = createHash('md5').update(m.sender).digest('hex')
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender
   let cap = `
-  ━━━━ 「 *Successful Registration* 」━━━
+  ━━━━ 「 *Berhasil Daftar* 」━━━
   .
 ╭━━「 *ᴜsᴇʀs* 」
-│▸ *sᴛᴀᴛᴜs:* ☑️ sᴜᴄᴄᴇssғᴜʟ
+│▸ *sᴛᴀᴛᴜs:* ☑️ Berhasil
 │▸ *ɴᴀᴍᴇ:* ${name}
 │▸ *ᴀɢᴇ:* ${age} ʏᴇᴀʀs
 │▸ *sɴ:* ${sn}
 ╰═┅═━––––––๑
 
-ꜱᴜʙꜱᴄʀɪʙᴇ ʏᴛ: ᴹᴿ᭄ PutraModz ×፝֟͜×
+ᴋɪɴɢʙᴏᴛᴠ2 ʙʏ ʟᴀɴꜱ ᴛᴀᴍᴠᴀɴ
 `
   let buttonMessage= {
 'document':{'url':'https://youtu.be/QOm1gEFbMdI'},
@@ -98,13 +98,13 @@ const listMessage = {
 'previewType':'pdf',
 'title':global.titlebot,
 'body':global.titlebot,
-'thumbnail':await(await fetch('https://telegra.ph/file/beec58efa5d3821dea224.jpg')).buffer(),
+'thumbnail':await(await fetch('https://telegra.ph/file/27553d4d1966a88af5918.jpg')).buffer(),
 'sourceUrl':'https://youtu.be/QOm1gEFbMdI'}},
 'caption':cap,
 'footer':botdate,
 'buttons':[
-{'buttonId':'.menu','buttonText':{'displayText':'▣ Mҽɳυ ▣'},'type':1},
-{'buttonId':'.salken','buttonText':{'displayText':'🎈Hαʅʅσ'},'type':1}
+{'buttonId':'.menu','buttonText':{'displayText':'Mҽɳυ🗿'},'type':1},
+{'buttonId':'.donasi','buttonText':{'displayText':'Donasi🗿'},'type':1}
 ],
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
